@@ -3,17 +3,6 @@ petsc4py.init(sys.argv)
 from petsc4py import PETSc
 
 
-
-
-
-
-
-
-
-
-
-
-"""
 # grid size and spacing
 m, n = 32, 32
 hx = 1.0/(m-1)
@@ -74,4 +63,3 @@ pylab.plot(X.ravel(),Y.ravel(),'.k')
 pylab.axis('equal')
 pylab.colorbar()
 pylab.show()
-""v
