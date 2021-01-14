@@ -1,8 +1,7 @@
 
 static char help[] = "Tests solving linear system on 0 by 0 matrix, and KSPLSQR convergence test handling.\n\n";
 
-#include <petscksp.h>
-
+#include "petscksp.h"
 static PetscErrorCode GetConvergenceTestName(PetscErrorCode (*converged)(KSP,PetscInt,PetscReal,KSPConvergedReason*,void*),char name[],size_t n)
 {
   PetscErrorCode ierr;
