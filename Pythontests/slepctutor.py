@@ -8,6 +8,8 @@ opts=PETSc.Options()
 n = opts.getInt('n', 30)
 
 A = PETSc.Mat().create()
+#A.create(PETSc.COMM_WORLD)
+#A.setType('aij')
 A.setSizes([n, n])
 A.setFromOptions()
 A.setUp()
