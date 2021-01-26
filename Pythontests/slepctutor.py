@@ -30,7 +30,8 @@ for i in range(rstart, rend):
 
 A.assemble()
 
-E = SLEPc.EPS(); E.create()
+E = SLEPc.EPS()
+E.create()
 
 E.setOperators(A)
 E.setProblemType(SLEPc.EPS.ProblemType.HEP)
